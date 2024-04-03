@@ -4,6 +4,6 @@ This visualization project has been developed for the MM 804 - GRAPHICS AND ANIM
 
 The covered visualization Topics are:
 
-1. Global Terroism - Developed by Tahmim Hossain
-2. Global Air Quality Index  - Developed by Ritika Ritika 
-3. Global Population  - Developed by Sai Sarath Movva
+1. Global Terroism 
+2. Global Air Quality Index  
+3. Global Population  
