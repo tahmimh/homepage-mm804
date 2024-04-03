@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a><b>This visualization project has been developed for MM804 - GRAPHICS AND ANIMATION Course Project.</b><br><i>N.B.The websites take one minutes to load after clicking to "SEE MORE" as it has been deployed into a free server.</i></a>
+        </nav>
+    </header>
+
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="image/img1.jpg" style="filter: brightness(50%);">
+                <div class="content">
+                    <div class="author">TAHMIM HOSSAIN</div>
+                    <div class="title">GLOBAL TERRORISM DATABASE</div>
+                    <div class="topic">VISUALIZATION</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        The Global Terrorism Database (GTD) is an open-source repository documenting over 200,000 terrorist incidents worldwide from 1970 to 2021, providing data on locations, weapons, casualties, and responsible groups or individuals, aiding in analysis and understanding of terrorism trends. <br> 
+                        <br><i><a href="https://www.start.umd.edu/gtd/about/" style="color: white;">Dataset: https://www.start.umd.edu/gtd/about/ </a></i>
+                    </div>
+                    <div class="buttons">
+                        <style>
+                            .see-more-button {
+                                cursor: pointer;
+                            }
+                        </style>
+                        
+                        <button class="see-more-button" onclick="window.location.href='https://global-terror-visual.onrender.com/'">SEE MORE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img2.jpg" style="filter: brightness(50%);">
+                <div class="content">
+                    <div class="author">RITIKA RITIKA</div>
+                    <div class="title">AIR QUALITY INDEX (AQI)</div>
+                    <div class="topic">VISUALIZATION</div>
+                    <div class="des">
+                        The AQI Visualiser, developed with Streamlit, offers interactive displays of Air Quality Index (AQI) values worldwide, featuring options for global or country-specific visualizations using Plotly, aiding users in understanding air pollution levels effortlessly. <br>
+                        <br><i><a href="https://www.kaggle.com/code/thabresh/world-air-quality-index-eda/input" style="color: white;">Dataset 1: https://www.kaggle.com/code/thabresh/world-air-quality-index-eda/input </a></i><br>
+                        <i><a href="https://www.kaggle.com/datasets/hasibalmuzdadid/global-air-pollution-dataset" style="color: white;">Dataset 2: https://www.kaggle.com/datasets/hasibalmuzdadid/global-air-pollution-dataset </a></i>
+                    </div>
+                    <div class="buttons">
+                        <style>
+                            .see-more-button {
+                                cursor: pointer;
+                            }
+                        </style>
+                        
+                        <button class="see-more-button" onclick="window.location.href='https://aqi-visualiser.onrender.com/'">SEE MORE</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg" style="filter: brightness(50%);">
+                <div class="content">
+                    <div class="author">SAI SARATH MOVVA</div>
+                    <div class="title">GLOBAL POPULATION</div>
+                    <div class="topic">VISUALIZATION</div>
+                    <div class="des">
+                        The 2022 Revision of World Population Prospects, prepared by the UN Population Division, offers estimates and projections from 1950 to 2100 based on extensive analyses of census data, vital registration systems, and sample surveys worldwide. It encompasses 237 countries/areas, providing insights into historical demographic trends and future population scenarios. <br>
+                        <br><i><a href="https://population.un.org/wpp/" style="color: white;">Dataset: https://population.un.org/wpp/</a></i>
+                    </div>
+                    <div class="buttons">
+                        <style>
+                            .see-more-button {
+                                cursor: pointer;
+                            }
+                        </style>
+                        
+                        <button class="see-more-button" onclick="window.location.href='https://github.com/Saisarath45/Visualization-of-World-Population-Prospect'">SEE MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="image/img1.jpg">
+                <div class="content">
+                    <div class="title">
+                        Global Terrorism Database Visualization
+                    </div>
+                    <div class="description">
+                        - by Tahmim
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img2.jpg">
+                <div class="content">
+                    <div class="title">
+                        AIR Quality Index (AQI) Visualization
+                    </div>
+                    <div class="description">
+                        - by Ritika
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    <div class="title">
+                        Global Population Visualization
+                    </div>
+                    <div class="description">
+                        - by Sai
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
