@@ -62,7 +62,7 @@ The shortage of nephrologists and the growing public health concern over renal f
 
 There are three folders inside this project. They are: (i) Dataset Preprocessing (ii) Proposed Feature Descriptor (iii) Model Training & Evalution. In "Model Training & Evalution" Folder there are two sub folders: (a) Adaptive Local Binary Pattern (b) Local Binary Pattern . One The explanation has given below:
 
-## Data Preprocessing
+#### Data Preprocessing
 
 In This folder we tried to used the data preprocessing by using the cropping, resizing and 
 
