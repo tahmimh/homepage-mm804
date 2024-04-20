@@ -62,26 +62,63 @@ The shortage of nephrologists and the growing public health concern over renal f
 
 # Dataset
 
-12,446 unique PACS images from different hospitals in Dhaka, Bangladesh were included in the dataset [reference][1]. The photos showed patients with kidney tumors, cysts, normal conditions, or kidney stones. From contrast and non-contrast investigations of the whole abdomen and urogram protocols, both coronal and axial cuts were included. The DICOM data have been converted into lossless JPEG. The author of the dataset mentioned that to guarantee data accuracy, each image finding was verified by a medical technician. 3,709 photographs of cysts, 5,077 images of normal circumstances, 1,377 images of kidney stones, and 2,283 images of tumors. To download the dataset go to [Click Here](https://www.kaggle.com/datasets/nazmul0087/ct-kidney-dataset-normal-cyst-tumor-and-stone)
+12,446 unique PACS images from different hospitals in Dhaka, Bangladesh were included in the dataset [1]. The photos showed patients with kidney tumors, cysts, normal conditions, or kidney stones. From contrast and non-contrast investigations of the whole abdomen and urogram protocols, both coronal and axial cuts were included. The DICOM data have been converted into lossless JPEG. The author of the dataset mentioned that to guarantee data accuracy, each image finding was verified by a medical technician. 3,709 photographs of cysts, 5,077 images of normal circumstances, 1,377 images of kidney stones, and 2,283 images of tumors. To download the dataset go to [Click Here](https://www.kaggle.com/datasets/nazmul0087/ct-kidney-dataset-normal-cyst-tumor-and-stone).
 
 
 # Usage
 
 There are three folders inside this project. They are: (i) Dataset Preprocessing (ii) Proposed Feature Descriptor (iii) Model Training & Evalution. In "Model Training & Evalution" Folder there are two sub folders: (a) Adaptive Local Binary Pattern (b) Local Binary Pattern . One The explanation has given below:
 
+### Download the Dataset
+
+ - To download the dataset [1] go to [Click Here](https://www.kaggle.com/datasets/nazmul0087/ct-kidney-dataset-normal-cyst-tumor-and-stone).
+
+- If you want to download the preprocessed dataset go to [Click Here](https://drive.google.com/file/d/1Q5r7aMLjA4veD4Tnh0r8LELJhNJGFnWl/view?usp=sharing).
+
 ### Data Preprocessing
 
-In This folder we tried to used the data preprocessing by using the cropping, resizing and applied the Contrast Limited Adaptive Histogram Equalization (CLAHE) to enhance the image's contrast.
+In This folder we tried to used the data preprocessing by using the cropping, resizing and applied the Contrast Limited Adaptive Histogram Equalization (CLAHE) to enhance the image's contrast. Open the jupter notebook by going inside the folder and run this command in command prompt/termnial:
+```bash
+ jupyter notebook
+```
+After executing the Jupyter Notebook, it will open, allowing you to modify the dataset paths to match the location of your dataset within your local drives. You'll need to update one path for reading the dataset and another for saving the dataset after preprocessing.
 
 ### Proposed Feature Descriptor
 
-Here we tried to compare the how the images are looking like after applying proposed Feature Descriptor (Adaptive Histogram Equalization(A-LBP)) and traditional Local Binary Pattern.
+Here we tried to compare the how the images are looking like after applying proposed Feature Descriptor (Adaptive Histogram Equalization(A-LBP)) and traditional Local Binary Pattern. Open the jupter notebook by going inside the folder and run this command in command prompt/termnial:
+```bash
+ jupyter notebook
+```
+This is just the comparision of two desciptors. From below figure it is easy to understand the difference:
+
+![Example Image](Figures/Feature_Extraction.png)
 
 ### Model Training & Evalution
 
-These are the notebooks of the model training and we separate it according to it's Classifiers and Feature Descriptors. Here we renamed all the files according to "No_Feature-Extraction-Method-Name_Classifier-Name". The abbreviations we have used here for feature extraction method "LBP" means "Local Binary Pattern" and "ALBP" means "Adaptive Local Binary Pattern". For the classifiers "RF" means "Random Forest", "DT" means "Decision Tree", "NB" means "Gaussian Naive Bayes", "KNN" means "K-Nearest-Neighbor", "SVM" means "Support Vector Machine", "ENSEMBLE" means "Using Soft Voting of the five classifiers to make a robust model". 
+These notebooks contain the model training process, categorized based on the classifiers and feature descriptors utilized. Each notebook filename follows the format: "No_Feature-Extraction-Method-Name_Classifier-Name".
 
-### To Run all the Programs in Local Machine
+#### Feature Extraction Methods:
+- "LBP": Local Binary Pattern
+- "ALBP": Adaptive Local Binary Pattern
+
+#### Classifiers
+
+- "RF": Random Forest
+- "DT": Decision Tree
+- "NB": Gaussian Naive Bayes
+- "KNN": K-Nearest-Neighbor
+- "SVM": Support Vector Machine
+- "ENSEMBLE": Using Soft Voting of the five classifiers to make a robust model
+
+Each notebook contains the respective model training code for a specific combination of feature extraction method and classifier. Renaming of the files has been done according to this format to ensure clarity and ease of navigation. Open the jupter notebook by going inside the folder and run this command in command prompt/termnial:
+```bash
+ jupyter notebook
+```
+After executing the Jupyter Notebook, it will open, allowing you to modify the dataset paths to match the location of your dataset within your local drives. You can also upload the preprocessed dataset in Kaggle Environment and run there by simply uploading the notebooks. If you want to download the preprocessed dataset directly go to [Click Here](https://drive.google.com/file/d/1Q5r7aMLjA4veD4Tnh0r8LELJhNJGFnWl/view?usp=sharing).
+
+
+
+
 
 
 
