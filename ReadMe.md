@@ -1,7 +1,7 @@
 
 
 
-![Example Image](images/img1.jpg)
+![Example Image](image/img1.jpg)
 
 
 
